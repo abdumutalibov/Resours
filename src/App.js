@@ -4,7 +4,7 @@ import data from "./mock-data.json";
 import { useState } from 'react';
 
 function App() {
-  const [contacts, setContacts] = useState(data);
+  const [contacts] = useState(data);
   return (
     
     <div className="app-container">

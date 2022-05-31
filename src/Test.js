@@ -38,13 +38,8 @@ const useSortableData = (items, config = null) => {
 };
 
 const ProductTable = (props) => {
-  const { items, requestSort, sortConfig } = useSortableData(props.products);
-  const getClassNamesFor = (name) => {
-    if (!sortConfig) {
-      return;
-    }
-    return sortConfig.key === name ? sortConfig.direction : undefined;
-  };
+  const { items, requestSort } = useSortableData(props.products);
+ 
   return (
     <table>
       
@@ -60,7 +55,6 @@ const ProductTable = (props) => {
             <button 
               type="button"
               onClick={() => requestSort('name')}
-            //   className={getClassNamesFor('name')}
             className ='button'
             >
                 
@@ -71,22 +65,13 @@ const ProductTable = (props) => {
             <button 
               type="button"
               onClick={() => requestSort('price')}
-            //   className={getClassNamesFor('price')}
             className ='button'
 
             >
               FILE
             </button>
           </th>
-          {/* <th>
-            <button
-              type="button"
-              onClick={() => requestSort('stock')}
-              className={getClassNamesFor('stock')}
-            >
-              In Stock
-            </button>
-          </th> */}
+       
         </tr>
       </thead>
       <tbody>
@@ -101,12 +86,10 @@ const ProductTable = (props) => {
                 </td>
             <td >
                 <a href=''> {item.price}  </a>
-              {/* <img className='imges' src={app}/>   */}
                
                 <img className='imges' src={item.icon}/>
                 </td>
 
-            {/* <td>{item.stock}</td> */}
           </tr>
         ))}
       </tbody>
