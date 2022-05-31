@@ -139,6 +139,7 @@ export default function App() {
 
             // title: "Step by step guid for drivers during inspection",
             // price: "Download",
+            pathApk: "https://play.google.com/store/apps/details?id=com.tteld.app&hl=ru&gl=US",
 
             icon: play,
             stock: 12,
