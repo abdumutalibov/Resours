@@ -2,7 +2,7 @@ import React from "react";
 import "./Test.css";
 import app from "./images/button-app.png";
 import ios from "./images/download.png";
-import ios2 from "./images/ios.png";
+import APK from "./images/images.png";
 import play from "./images/button-play.png";
 import logo from "./images/LogoSidebar.png";
 const useSortableData = (items, config = null) => {
@@ -139,7 +139,7 @@ export default function App() {
 
             // title: "Step by step guid for drivers during inspection",
             // price: "Download",
-            icon: 'https://pplware.sapo.pt/wp-content/uploads/2012/02/apk_00.jpg',
+            icon: 'https://cerebroedu.com/download/android_download.jpg',
             stock: 12,
           },
           {
