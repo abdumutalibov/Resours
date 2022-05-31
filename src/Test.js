@@ -85,7 +85,7 @@ const ProductTable = (props) => {
               <div className='title'>{item.title}</div>
                 </td>
             <td >
-                <a > {item.price}  </a>
+                <a href='#' > {item.price}  </a>
                
                 <img className='imges' src={item.icon} alt=''/>
                 </td>
