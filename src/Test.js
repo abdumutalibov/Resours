@@ -1,6 +1,8 @@
 import React from "react";
 import "./Test.css";
 import app from "./images/button-app.png";
+import ios from "./images/download.png";
+import ios2 from "./images/ios.png";
 import play from "./images/button-play.png";
 import logo from "./images/LogoSidebar.png";
 const useSortableData = (items, config = null) => {
@@ -43,14 +45,14 @@ const ProductTable = (props) => {
   return (
     <table>
       <caption>
-        {" "}
+        
         <img src={logo} alt="" />
         <div className="h3">
-          {" "}
+         
           TTELD is an industry-leading electronic logging device.
         </div>
         <div>
-          {" "}
+        
           TTELD is an industry-leading electronic logging device. Our ELD
           compliance solution provides users with a wide variety of
           comprehensive features.
@@ -81,10 +83,16 @@ const ProductTable = (props) => {
       <tbody>
         {items.map((item) => (
           <tr key={item.id}>
-            <td className="firstTD">
-              <div className="name"> {item.name}</div>
+            <td className="tdFirst">
+            {/* <img className="imges1" src={item.ios} alt="" /> */}
 
+              <div className="firstTD">
+                <div className="name"> {item.name}</div>
+
+              <div className="title">{item.name2}</div>
               <div className="title">{item.title}</div>
+              </div>
+              
             </td>
             <td>
               <div> {item.price} </div>
@@ -105,27 +113,33 @@ export default function App() {
         products={[
           {
             id: 1,
-            name: "TT ELD Sticker",
-            title:
-              "A simple sticker can help roadside or enforcement personnel quickly ascertain that the device on board is in fact an ELD and carry out the inspection accordingly.",
-            price: "Download",
-            icon: app,
+            name: "Android ",
+            name2:"APP",
+            // title:
+            //   "A simple sticker can help roadside or enforcement personnel quickly ascertain that the device on board is in fact an ELD and carry out the inspection accordingly.",
+            // price: "Download",
+            ios:ios,
+            icon: play,
             stock: 20,
           },
           {
             id: 2,
-            name: "Certificate",
-            title: "TT ELD is certified for customers confidence and safety",
-            price: "Download",
-            icon: play,
+            name: "IOS APP",
+            // name2:"IOS APP",
+
+            // title: "TT ELD is certified for customers confidence and safety",
+            // price: "Download",
+            icon: app,
             stock: 32,
           },
           {
             id: 3,
-            name: "Inspection",
-            title: "Step by step guid for drivers during inspection",
-            price: "Download",
-            icon: app,
+            name: "Download ",
+            name2:"APK",
+
+            // title: "Step by step guid for drivers during inspection",
+            // price: "Download",
+            icon: 'https://pplware.sapo.pt/wp-content/uploads/2012/02/apk_00.jpg',
             stock: 12,
           },
           {
@@ -134,7 +148,7 @@ export default function App() {
             title:
               "The source for both drivers and dispatchers to guide while using TT ELD",
             price: "Download",
-            icon: play,
+            // icon: play,
             stock: 9,
           },
           {
@@ -143,7 +157,7 @@ export default function App() {
             title:
               "Quick instruction to setup both driver application and eld device before using TT ELD",
             price: "Download",
-            icon: app,
+            // icon: app,
             stock: 99,
           },
           {
@@ -152,7 +166,7 @@ export default function App() {
             title:
               "The guide when eld or driver application does not work as intended",
             price: "Download",
-            icon: play,
+            // icon: play,
             stock: 86,
           },
         ]}
