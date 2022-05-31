@@ -2,7 +2,6 @@ import React from "react";
 import "./Test.css";
 import app from "./images/button-app.png";
 import ios from "./images/download.png";
-import APK from "./images/images.png";
 import play from "./images/button-play.png";
 import logo from "./images/LogoSidebar.png";
 const useSortableData = (items, config = null) => {
@@ -96,8 +95,10 @@ const ProductTable = (props) => {
             </td>
             <td>
               <div> {item.price} </div>
+<a href="/">
 
               <img className="imges" src={item.icon} alt="" />
+</a>
             </td>
           </tr>
         ))}
