@@ -44,14 +44,11 @@ const ProductTable = (props) => {
   return (
     <table>
       <caption>
-        
         <img src={logo} alt="" />
         <div className="h3">
-         
           TTELD is an industry-leading electronic logging device.
         </div>
         <div>
-        
           TTELD is an industry-leading electronic logging device. Our ELD
           compliance solution provides users with a wide variety of
           comprehensive features.
@@ -83,22 +80,23 @@ const ProductTable = (props) => {
         {items.map((item) => (
           <tr key={item.id}>
             <td className="tdFirst">
-            {/* <img className="imges1" src={item.ios} alt="" /> */}
+              {/* <img className="imges1" src={item.ios} alt="" /> */}
 
               <div className="firstTD">
                 <div className="name"> {item.name}</div>
 
-              <div className="title">{item.name2}</div>
-              <div className="title">{item.title}</div>
+                <div className="title">{item.name2}</div>
+                <div className="title">{item.title}</div>
               </div>
-              
             </td>
-            <td>
-              <div> {item.price} </div>
-<a href="/">
+            <td className="td">
+              <a href={item.path} target="_blank">
+                <div className="price"> {item.price} </div>
+              </a>
 
-              <img className="imges" src={item.icon} alt="" />
-</a>
+              <a href={item.pahh}>
+                <img className="imges" src={item.icon} alt="" />
+              </a>
             </td>
           </tr>
         ))}
@@ -114,14 +112,14 @@ export default function App() {
         products={[
           {
             id: 1,
-           
+
             name: "Download ",
-            name2:"APK",
+            name2: "APK",
             // title:
             //   "A simple sticker can help roadside or enforcement personnel quickly ascertain that the device on board is in fact an ELD and carry out the inspection accordingly.",
             // price: "Download",
             icon: android,
-        
+
             stock: 20,
           },
           {
@@ -137,38 +135,78 @@ export default function App() {
           {
             id: 3,
             name: "Android ",
-            name2:"APP",
+            name2: "APP",
 
             // title: "Step by step guid for drivers during inspection",
             // price: "Download",
-           
+
             icon: play,
             stock: 12,
           },
           {
             id: 4,
+
+            name: "TT ELD Sticker ",
+            path: "https://us.tteld.com/docs/sticker.png",
+            title:
+              "A simple sticker can help roadside or enforcement personnel quickly ascertain that the device on board is in fact an ELD and carry out the inspection accordingly.",
+            price: "Download",
+            // icon: android,
+
+            stock: 20,
+          },
+          {
+            id: 5,
+            name: "Certificate",
+            // name2:"IOS APP",
+            path: "https://us.tteld.com/docs/Certificate.pdf",
+            title: "TT ELD is certified for customers confidence and safety",
+            price: "Download",
+            // icon: app,
+            stock: 32,
+          },
+          {
+            id: 6,
+            name: "Inspection ",
+            // name2:"APP",
+            path: "https://us.tteld.com/docs/Inspection.pdf",
+
+            title: "Step by step guid for drivers during inspection",
+            price: "Download",
+
+            // icon: play,
+            stock: 12,
+          },
+          {
+            id: 7,
             name: "Users manual",
             title:
               "The source for both drivers and dispatchers to guide while using TT ELD",
             price: "Download",
             // icon: play,
+            path: "https://us.tteld.com/docs/Usersmanual.pdf",
+
             stock: 9,
           },
           {
-            id: 5,
+            id: 8,
             name: "Installation",
             title:
               "Quick instruction to setup both driver application and eld device before using TT ELD",
             price: "Download",
             // icon: app,
+            path: "https://us.tteld.com/docs/Setup.pdf",
+
             stock: 99,
           },
           {
-            id: 6,
+            id: 9,
             name: "Malfunction",
             title:
               "The guide when eld or driver application does not work as intended",
             price: "Download",
+            path: "https://us.tteld.com/docs/EldMalfunction.pdf",
+
             // icon: play,
             stock: 86,
           },

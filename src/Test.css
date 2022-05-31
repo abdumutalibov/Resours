@@ -57,6 +57,7 @@ body {
     /* border-bottom: 1px solid #ccc; */
     /* border: 1px solid black; */
     border: 0.1px solid rgb(230, 229, 229);
+    cursor: pointer;
   }
   thead {
       background-color: rgb(228, 235, 240);
@@ -91,7 +92,7 @@ object-fit: contain;
   .name{
       font-size: 16px;
       color: rgb(39, 53, 84);
-      font-weight: 500;
+      font-weight: 600;
       padding: 5px 0 6px 0;
   }
 
@@ -109,4 +110,14 @@ max-width: 40rem;
   .imges{
       width: 70px;
       padding: 0px 0;
+  }
+  .price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .td{
+    margin: 0 auto;
   }
