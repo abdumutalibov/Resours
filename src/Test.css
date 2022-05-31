@@ -1,0 +1,106 @@
+body {
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(230, 229, 229);
+    
+  }
+  caption{
+      padding: 10px 0 30px 0;
+      margin-right: 0 auto;
+      background: white;
+      /* text-align: left; */
+  }
+
+  .h3{
+      /* max-width: 20rem; */
+      line-height: 26px;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 10px 0 20px 0;
+  }
+  thead th {
+    text-align: left;
+    border: 1px solid rgb(216, 214, 214);
+  }
+  
+  thead button {
+    border: 0;
+    border-radius: none;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: inherit;
+    padding: 0.5em;
+    margin-bottom: 1px;
+
+  }
+  
+  thead button.ascending::after {
+    /* content: '👇'; */
+    display: inline-block;
+    margin-left: 2em;
+  }
+  
+  thead button.descending::after {
+    /* content: '☝️'; */
+    display: inline-block;
+    margin-left: 2em;
+    background-color: red;
+  }
+  
+  tbody td {
+    padding: 0.5em;
+    border-bottom: 1px solid #ccc;
+    /* border: 1px solid black; */
+    border: 1px solid rgb(230, 229, 229);
+  }
+  thead {
+      background-color: rgb(228, 235, 240);
+
+  }
+  
+  tbody tr:hover {
+      background-color: #eee;
+  }
+
+  .firstTD{
+      flex-direction: column;
+      
+  }
+
+  button{
+      background: none;
+      font-size: 15px;
+    }
+    
+    .button{
+      font-size: 14px;
+      color: rgb(114, 116, 118);
+      font-weight: 600;
+  }
+  .name{
+      font-size: 16px;
+      color: rgb(39, 53, 84);
+      font-weight: 500;
+      padding: 5px 0 6px 0;
+  }
+
+  .title{
+    font-weight: 500;
+max-width: 40rem;
+    font-size: 14px;
+  }
+  .download{
+      color: aqua;
+  }
+  a{
+      text-decoration: none;
+  }
+  .imges{
+      width: 60px;
+      padding: 5px 0;
+  }

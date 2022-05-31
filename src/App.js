@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import ReadOnlyRow from './ReadOnlyRow';
+import data from "./mock-data.json";
+import { useState } from 'react';
 
 function App() {
+  const [contacts, setContacts] = useState(data);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <div className="app-container">
+    <form >
+      <table>
+        <thead>
+          <tr>
+          
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+        {contacts.map((contact) => (
+              <ReadOnlyRow
+              contact={contact}
+             
+            />
+            ))}
+        </tbody>
+      </table>
+    </form>
+
+  
+  </div>
   );
 }
 
