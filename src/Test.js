@@ -126,6 +126,7 @@ export default function App() {
             id: 2,
             name: "IOS APP",
             // name2:"IOS APP",
+            pathApk: "https://apps.apple.com/uz/app/tt-eld/id1596279099",
 
             // title: "TT ELD is certified for customers confidence and safety",
             // price: "Download",
