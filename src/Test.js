@@ -43,7 +43,7 @@ const ProductTable = (props) => {
   return (
     <table>
       
-      <caption> <img src={logo}/> 
+      <caption> <img src={logo} alt=''/> 
     <div className='h3'> TTELD is an industry-leading electronic logging device.</div>
     <div> TTELD is an industry-leading electronic logging device. Our ELD
             compliance solution provides users with a wide variety of
@@ -85,9 +85,9 @@ const ProductTable = (props) => {
               <div className='title'>{item.title}</div>
                 </td>
             <td >
-                <a href=''> {item.price}  </a>
+                <a > {item.price}  </a>
                
-                <img className='imges' src={item.icon}/>
+                <img className='imges' src={item.icon} alt=''/>
                 </td>
 
           </tr>
@@ -104,7 +104,7 @@ export default function App() {
         products={[
           { id: 1, name: 'TT ELD Sticker', title: 'A simple sticker can help roadside or enforcement personnel quickly ascertain that the device on board is in fact an ELD and carry out the inspection accordingly.' , price: 'Download', icon:app, stock: 20 },
           { id: 2, name: 'Certificate',title: 'TT ELD is certified for customers confidence and safety', price: 'Download',icon:play, stock: 32 },
-          { id: 3, name: 'Inspection', title:'Step by step guid for drivers during inspection', price: 'Download', icon:'logo192.png', icon:app, stock: 12 },
+          { id: 3, name: 'Inspection', title:'Step by step guid for drivers during inspection', price: 'Download',  icon:app, stock: 12 },
           { id: 4, name: 'Users manual', title:'The source for both drivers and dispatchers to guide while using TT ELD', price:'Download' ,icon:play,  stock: 9 },
           { id: 5, name: 'Installation', title:'Quick instruction to setup both driver application and eld device before using TT ELD', price: 'Download' , icon:app, stock: 99 },
           { id: 6, name: 'Malfunction', title:'The guide when eld or driver application does not work as intended', price:'Download',icon:play, stock: 86 },
