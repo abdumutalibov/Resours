@@ -78,6 +78,7 @@ body {
 .imges1{
 width: 50px;
 object-fit: contain;
+margin: 0 auto;
 }
   button{
       background: none;
@@ -109,7 +110,12 @@ max-width: 40rem;
   }
   .imges{
       width: 70px;
-      padding: 0px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+
   }
   .price{
     display: flex;
@@ -120,4 +126,5 @@ max-width: 40rem;
   }
   .td{
     margin: 0 auto;
+   
   }

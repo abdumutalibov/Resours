@@ -3,7 +3,7 @@ import "./Test.css";
 import app from "./images/button-app.png";
 import android from "./images/android_download.jpg";
 import play from "./images/button-play.png";
-import logo from "./images/LogoSidebar.png";
+import logo from "./images/TT_ELDBlack.png";
 const useSortableData = (items, config = null) => {
   const [sortConfig, setSortConfig] = React.useState(config);
 
@@ -46,12 +46,10 @@ const ProductTable = (props) => {
       <caption>
         <img src={logo} alt="" />
         <div className="h3">
-          TTELD is an industry-leading electronic logging device.
+          {/* TTELD is an industry-leading electronic logging device. */}
         </div>
-        <div>
-          TTELD is an industry-leading electronic logging device. Our ELD
-          compliance solution provides users with a wide variety of
-          comprehensive features.
+        <div className="h3">
+        Downloads
         </div>
       </caption>
       <thead>
