@@ -1,7 +1,7 @@
 import React from "react";
 import "./Test.css";
 import app from "./images/button-app.png";
-import ios from "./images/download.png";
+import android from "./images/android_download.jpg";
 import play from "./images/button-play.png";
 import logo from "./images/LogoSidebar.png";
 const useSortableData = (items, config = null) => {
@@ -114,13 +114,14 @@ export default function App() {
         products={[
           {
             id: 1,
-            name: "Android ",
-            name2:"APP",
+           
+            name: "Download ",
+            name2:"APK",
             // title:
             //   "A simple sticker can help roadside or enforcement personnel quickly ascertain that the device on board is in fact an ELD and carry out the inspection accordingly.",
             // price: "Download",
-            ios:ios,
-            icon: play,
+            icon: android,
+        
             stock: 20,
           },
           {
@@ -135,12 +136,13 @@ export default function App() {
           },
           {
             id: 3,
-            name: "Download ",
-            name2:"APK",
+            name: "Android ",
+            name2:"APP",
 
             // title: "Step by step guid for drivers during inspection",
             // price: "Download",
-            icon: 'https://cerebroedu.com/download/android_download.jpg',
+           
+            icon: play,
             stock: 12,
           },
           {
