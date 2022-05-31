@@ -90,11 +90,11 @@ const ProductTable = (props) => {
               </div>
             </td>
             <td className="td">
-              <a href={item.path} target="_blank">
+              <a href={item.path} target="_blank" rel="noreferrer">
                 <div className="price"> {item.price} </div>
               </a>
 
-              <a href={item.pahh}>
+              <a href={item.pathApk}>
                 <img className="imges" src={item.icon} alt="" />
               </a>
             </td>
@@ -119,7 +119,7 @@ export default function App() {
             //   "A simple sticker can help roadside or enforcement personnel quickly ascertain that the device on board is in fact an ELD and carry out the inspection accordingly.",
             // price: "Download",
             icon: android,
-
+            pathApk: "https://us.tteld.com/update/tteld.apk",
             stock: 20,
           },
           {
