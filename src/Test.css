@@ -74,6 +74,9 @@ body {
   }
   .tdFirst{
     display: flex;
+    /* height: 50px; */
+  }
+  @media screen and (max-width:480px){
   }
 .imges1{
 width: 50px;
@@ -109,13 +112,13 @@ max-width: 40rem;
       text-decoration: none;
   }
   .imges{
-      width: 70px;
+      width: 100px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 0 auto;
-
+      padding: 0;
+margin: 0 auto;
   }
   .price{
     display: flex;
@@ -126,5 +129,6 @@ max-width: 40rem;
   }
   .td{
     margin: 0 auto;
-   
+   margin: 0;
+   padding: 0 5px;
   }
